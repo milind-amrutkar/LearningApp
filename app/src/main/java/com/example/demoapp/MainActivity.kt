@@ -21,6 +21,12 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.demoapp.components.ButtonWithIcon
+import com.example.demoapp.components.CornerCutShapeButton
+import com.example.demoapp.components.ElevatedButtonExample
+import com.example.demoapp.components.ImageViewExample
+import com.example.demoapp.components.RoundCornerShapeButton
+import com.example.demoapp.components.UIElementPreview
 import com.example.demoapp.ui.theme.DemoAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -36,6 +42,12 @@ class MainActivity : ComponentActivity() {
                 ) {
                     Greeting("Android")
                     SampleButton()
+                    UIElementPreview()
+                    ButtonWithIcon()
+                    CornerCutShapeButton()
+                    RoundCornerShapeButton()
+                    ElevatedButtonExample()
+                    ImageViewExample()
                 }
 
             }

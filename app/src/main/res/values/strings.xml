@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">DemoApp</string>
     <string name="click_me">Click Me</string>
+    <string name="sample">sample</string>
+    <string name="corner_button">Corner Button</string>
+    <string name="rounded">Rounded</string>
+    <string name="elevated">Elevated Button</string>
+    <string name="image">image</string>
 </resources>
