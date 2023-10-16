@@ -4,29 +4,21 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.BorderStroke
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.demoapp.components.ButtonWithIcon
-import com.example.demoapp.components.CornerCutShapeButton
-import com.example.demoapp.components.ElevatedButtonExample
-import com.example.demoapp.components.ImageViewExample
-import com.example.demoapp.components.RoundCornerShapeButton
-import com.example.demoapp.components.UIElementPreview
+import com.example.demoapp.components.CityList
+import com.example.demoapp.favoritecity.CityDataSource
 import com.example.demoapp.ui.theme.DemoAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -34,22 +26,22 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContent {
             DemoAppTheme {
-                Column(
-                    modifier = Modifier
-                        .fillMaxSize()
-                        .wrapContentSize(Alignment.Center),
-                    horizontalAlignment = Alignment.CenterHorizontally
-                ) {
-                    Greeting("Android")
-                    SampleButton()
-                    UIElementPreview()
-                    ButtonWithIcon()
-                    CornerCutShapeButton()
-                    RoundCornerShapeButton()
-                    ElevatedButtonExample()
-                    ImageViewExample()
-                }
-
+//                Column(
+//                    modifier = Modifier
+//                        .fillMaxSize()
+//                        .wrapContentSize(Alignment.Center),
+//                    horizontalAlignment = Alignment.CenterHorizontally
+//                ) {
+//                    Greeting("Android")
+//                    SampleButton()
+//                    UIElementPreview()
+//                    ButtonWithIcon()
+//                    CornerCutShapeButton()
+//                    RoundCornerShapeButton()
+//                    ElevatedButtonExample()
+//                    ImageViewExample()
+//                }
+                CityList(cityList = CityDataSource.loadCities())
             }
         }
     }
