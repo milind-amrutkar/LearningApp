@@ -17,7 +17,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.demoapp.pagerexample.CityTabCarousel
+import com.example.demoapp.collapsingtoolbar.CollapsingToolbarExample
 import com.example.demoapp.ui.theme.DemoAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -41,7 +41,8 @@ class MainActivity : ComponentActivity() {
 //                    ImageViewExample()
 //                }
 //                CityList(cityList = CityDataSource.loadCities())
-                CityTabCarousel()
+//                CityTabCarousel()
+                CollapsingToolbarExample()
             }
         }
     }
