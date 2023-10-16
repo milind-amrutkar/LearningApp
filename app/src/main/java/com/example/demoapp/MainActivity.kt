@@ -17,8 +17,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.demoapp.components.CityList
-import com.example.demoapp.favoritecity.CityDataSource
+import com.example.demoapp.pagerexample.CityTabCarousel
 import com.example.demoapp.ui.theme.DemoAppTheme
 
 class MainActivity : ComponentActivity() {
@@ -41,7 +40,8 @@ class MainActivity : ComponentActivity() {
 //                    ElevatedButtonExample()
 //                    ImageViewExample()
 //                }
-                CityList(cityList = CityDataSource.loadCities())
+//                CityList(cityList = CityDataSource.loadCities())
+                CityTabCarousel()
             }
         }
     }
